@@ -2,7 +2,7 @@
 
 class FileUploader {
 
-    function getErrorMsg($file , $folder) {
+    public function getErrorMsg($file , $folder) {
 
         if (! isset($file))
             return "File is empty";
@@ -25,7 +25,7 @@ class FileUploader {
         return null;
     }
 
-    function saveFile($file, $dir) {
+    public function saveFile($file, $dir) {
 
         $tempFile = $file['tmp_name'];
         $name = $file['name'];
